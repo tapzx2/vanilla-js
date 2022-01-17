@@ -20,7 +20,7 @@ document.addEventListener('click', function(event) {
 })
 
 forms = document.querySelectorAll('form')
-for (let i in forms) {
+for (let i = 0; i<forms.length; i++) {
     forms[i].setAttribute('form-number', `form-${i}`); // an error here!
     for (let value of forms[i]){
         value.setAttribute('form-number', `form-${i}`);
